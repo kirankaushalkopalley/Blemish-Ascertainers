@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 4, 2014 10:32:34 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="a.PostData" table="post_data" catalog="cms_sri_indu">
+        <id name="postId" type="java.lang.Integer">
+            <column name="Post_id" />
+            <generator class="identity" />
+        </id>
+        <property name="postTitle" type="string">
+            <column name="Post_title" length="65535" not-null="true" />
+        </property>
+        <property name="postDescription" type="string">
+            <column name="Post_description" length="65535" not-null="true" />
+        </property>
+        <property name="postedBy" type="string">
+            <column name="Posted_by" length="300" not-null="true" />
+        </property>
+        <property name="dateOfPost" type="date">
+            <column name="date_of_post" length="10" not-null="true" />
+        </property>
+        <property name="status" type="string">
+            <column name="status" length="20" not-null="true" />
+        </property>
+        <property name="postUrl" type="string">
+            <column name="Post_url" length="400" not-null="true" />
+        </property>
+        <property name="catid" type="string">
+            <column name="Catid" length="200" not-null="true" />
+        </property>
+        <property name="postTags" type="string">
+            <column name="Post_tags" length="65535" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

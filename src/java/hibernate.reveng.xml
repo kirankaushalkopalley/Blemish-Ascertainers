@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd">
+<hibernate-reverse-engineering>
+  <schema-selection match-catalog="cms_sri_indu"/>
+  <table-filter match-name="post_category_data"/>
+  <table-filter match-name="recent_search_data"/>
+  <table-filter match-name="discussion_data"/>
+  <table-filter match-name="post_data"/>
+  <table-filter match-name="user_data"/>
+  <table-filter match-name="history"/>
+  <table-filter match-name="packages"/>
+  <table-filter match-name="response_type"/>
+  <table-filter match-name="user_packs"/>
+  <table-filter match-name="admin_data"/>
+  <table-filter match-name="comments"/>
+</hibernate-reverse-engineering>

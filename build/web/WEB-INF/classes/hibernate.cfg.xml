@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/cms_sri_indu</property>
+    <property name="hibernate.connection.username">root</property>
+    <mapping resource="a/Comments.hbm.xml"/>
+    <mapping resource="a/AdminData.hbm.xml"/>
+    <mapping resource="a/UserPacks.hbm.xml"/>
+    <mapping resource="a/Packages.hbm.xml"/>
+    <mapping resource="a/History.hbm.xml"/>
+    <mapping resource="a/RecentSearchData.hbm.xml"/>
+    <mapping resource="a/UserData.hbm.xml"/>
+    <mapping resource="a/PostData.hbm.xml"/>
+    <mapping resource="a/ResponseType.hbm.xml"/>
+    <mapping resource="a/PostCategoryData.hbm.xml"/>
+    <mapping resource="a/DiscussionData.hbm.xml"/>
+  </session-factory>
+</hibernate-configuration>

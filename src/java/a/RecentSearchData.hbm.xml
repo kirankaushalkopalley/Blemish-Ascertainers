@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 4, 2014 10:32:34 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="a.RecentSearchData" table="recent_search_data" catalog="cms_sri_indu">
+        <id name="searchId" type="java.lang.Integer">
+            <column name="Search_id" />
+            <generator class="identity" />
+        </id>
+        <property name="searchKeyword" type="string">
+            <column name="Search_Keyword" length="65535" not-null="true" />
+        </property>
+        <property name="dateOfSearch" type="date">
+            <column name="date_of_search" length="10" not-null="true" />
+        </property>
+        <property name="searchedBy" type="string">
+            <column name="Searched_by" length="300" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 4, 2014 10:32:34 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="a.PostCategoryData" table="post_category_data" catalog="cms_sri_indu">
+        <id name="catid" type="java.lang.Integer">
+            <column name="Catid" />
+            <generator class="identity" />
+        </id>
+        <property name="cattitle" type="string">
+            <column name="Cattitle" length="300" not-null="true" />
+        </property>
+        <property name="dateOfCreation" type="string">
+            <column name="date_of_creation" length="100" not-null="true" />
+        </property>
+        <property name="whoCreated" type="string">
+            <column name="who_created" length="300" not-null="true" />
+        </property>
+        <property name="caturl" type="string">
+            <column name="caturl" length="65535" not-null="true" />
+        </property>
+        <property name="status" type="string">
+            <column name="status" length="30" not-null="true" />
+        </property>
+        <property name="lastEditDate" type="string">
+            <column name="last_edit_date" length="100" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

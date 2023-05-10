@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 4, 2014 10:32:34 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="a.DiscussionData" table="discussion_data" catalog="cms_sri_indu">
+        <id name="discussionId" type="java.lang.Integer">
+            <column name="discussion_id" />
+            <generator class="identity" />
+        </id>
+        <property name="discussedBy" type="string">
+            <column name="discussed_by" length="300" not-null="true" />
+        </property>
+        <property name="discussionDate" type="date">
+            <column name="discussion_date" length="10" not-null="true" />
+        </property>
+        <property name="discussionDesc" type="string">
+            <column name="discussion_desc" length="65535" not-null="true" />
+        </property>
+        <property name="status" type="string">
+            <column name="status" length="20" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

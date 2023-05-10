@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 4, 2014 10:32:34 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="a.Comments" table="comments" catalog="cms_sri_indu">
+        <id name="cid" type="java.lang.Integer">
+            <column name="cid" />
+            <generator class="identity" />
+        </id>
+        <property name="cdate" type="string">
+            <column name="cdate" length="200" not-null="true" />
+        </property>
+        <property name="comment" type="string">
+            <column name="comment" length="65535" not-null="true" />
+        </property>
+        <property name="givenby" type="string">
+            <column name="givenby" length="200" not-null="true" />
+        </property>
+        <property name="postid" type="int">
+            <column name="postid" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

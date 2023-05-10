@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 4, 2014 10:32:34 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="a.UserData" table="user_data" catalog="cms_sri_indu">
+        <id name="email" type="string">
+            <column name="Email" length="400" />
+            <generator class="assigned" />
+        </id>
+        <property name="username" type="string">
+            <column name="Username" length="300" not-null="true" />
+        </property>
+        <property name="password" type="string">
+            <column name="Password" length="65535" not-null="true" />
+        </property>
+        <property name="birthday" type="date">
+            <column name="Birthday" length="10" not-null="true" />
+        </property>
+        <property name="gender" type="string">
+            <column name="Gender" length="50" not-null="true" />
+        </property>
+        <property name="phone" type="string">
+            <column name="phone" length="110" not-null="true" />
+        </property>
+        <property name="tou" type="string">
+            <column name="tou" length="110" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
